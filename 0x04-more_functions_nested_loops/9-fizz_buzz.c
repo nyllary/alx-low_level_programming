@@ -15,17 +15,14 @@ int main(void)
 		{
 			printf("FizzBuzz ");
 		}
-
 		else if (f % 3 == 0)
 		{
 			printf("Fizz ");
 		}
-
 		else if (f % 5 == 0)
 		{
 			printf("Buzz ");
 		}
-
 		else
 		{
 			printf("%d ", f);

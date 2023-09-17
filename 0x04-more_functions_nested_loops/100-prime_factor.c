@@ -1,48 +1,24 @@
 #include <stdio.h>
 #include <math.h>
 /**
- * main - checks the code for the highest factor
+ * main - Entry point
  *
- * findLargestPrimeFactor - finds the larges number
- *
- * lomg lomg - function to find the largest factor
- *
- * @n: largest prime factor
- *
- * Return: Always 0
+ * Return: Always 0(Success)
  */
-
-long long findLargestPrimeFactor(long long n)
-{
-	long long maxPrime = -1;
-
-	while (n % 2 == 0)
-	{
-		maxPrime = 2;
-		n /= 2;
-	}
-	for (long long i = 3; i <= sqrt(n); i += 2)
-	{
-		while (n % i == 0)
-		{
-			maxPrime = i;
-			n /= i;
-		}
-		return (0);
-	}
-
-	if (n > 2)
-	{
-		maxPrime = n;
-		return (maxPrime);
-	}
-}
-
 int main(void)
 {
-	long long num = 612852475143;
-	long long largestPrimeFactor = findLargestPrimeFactor(num);
+	long int v, fac;
 
-	printf("%lld\n", largestPrimeFactor);
+	v = 612852475143;
+	for (fac = 2; fac <= v; fac++)
+	{
+		if (v % fac == 0)
+		{
+			v /= fac;
+			fac--;
+		}
+	}
+	printf("%ld\n", fac);
+
 	return (0);
 }
