@@ -9,16 +9,17 @@
  */
 void print_alphabet_x10(void)
 {
-	chat a, b;
+	char a, b;
 
 	for (a = 'a'; a <= 'z'; a++)
 	{
-		if (b < 10)
+		for (b < 10)
 		{
 			_putchar(a);
 		}
 	}
 	_putchar('\n');
+	return (a * 10);
 }
 
 int main(void)
