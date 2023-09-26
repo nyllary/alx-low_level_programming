@@ -13,12 +13,12 @@ char *_memset(char *s, char b, unsigned int n)
 	char *dest_s;
 	unsigned int byt;
 
-	if (s == NULL)
-		return (NULL);
-
 	dest_s = (char *) s;
 
 	for (byt = 0; byt <= n; byt++)
+	{
 		dest_s[byt] = b;
-	return (dest_s);
+		return (dest_s);
+	}
+	return (NULL);
 }
