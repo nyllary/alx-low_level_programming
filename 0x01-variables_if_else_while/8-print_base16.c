@@ -7,23 +7,21 @@
 int main(void)
 {
 	char c;
-	int d;
+	char d;
 
+	d = 48;
 	c = 'a';
-	d = 0;
-	while
-		(d < 10)
+
+	while (d <= 57)
 		{
-			putchar(d + 0);
+			putchar(d);
 			d++;
 		}
-	while
-		(c <= 'f')
+	while (c <= 'f')
 		{
 			putchar(c);
 			c++;
 		}
-
 	putchar('\n');
 	return (0);
 }
