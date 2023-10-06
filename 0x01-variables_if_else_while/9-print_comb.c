@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-	char p;
-	
-	p = 48;
+	int p;
 
-	for (p = 48; p <= 57; p++)
+	p = 0;
+
+	for (p = '0'; p <= '9'; p++)
 	{
-		if (p > 48)
+		if (p > '0')
 		{
 			putchar(',');
 			putchar(' ');
