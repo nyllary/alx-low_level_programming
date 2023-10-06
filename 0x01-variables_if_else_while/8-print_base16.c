@@ -13,15 +13,15 @@ int main(void)
 	c = 'a';
 
 	while (d <= 57)
-		{
-			putchar(d);
-			d++;
-		}
+	{
+		putchar(d);
+		d++;
+	}
 	while (c <= 'f')
-		{
-			putchar(c);
-			c++;
-		}
+	{
+		putchar(c);
+		c++;
+	}
 	putchar('\n');
 	return (0);
 }
