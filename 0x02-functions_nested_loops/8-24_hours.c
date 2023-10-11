@@ -1,17 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * jack_bauer - a person
  *
  * Return: Always 0(Success)
  */
-int jack_bauer(void)
+void jack_bauer(void)
 {
 	int day, hour;
 
 	day = 0;
 
-	while
+	while (day < 24)
 	{
 		hour = 0;
 		while (hour < 60)
@@ -26,10 +25,4 @@ int jack_bauer(void)
 		}
 		day++;
 	}
-}
-
-int main(void)
-{
-    jack_bauer();
-    return (0);
 }
