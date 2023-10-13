@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  *  _isdigit - checks if character is a digit
  *
@@ -15,15 +14,4 @@ int _isdigit(int c)
 		return (1);
 	else
 		return (0);
-}
-
-int main(void)
-{
-    char c;
-
-    c = '0';
-    printf("%c: %d\n", c, _isdigit(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isdigit(c));
-    return (0);
 }
