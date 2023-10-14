@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_square - prints out lenght value
  * @size: the size of the square
@@ -33,7 +32,6 @@ void print_square(int size)
 					_putchar('#');
 				}
 			}
-			_putchar('\n');
 			_putchar('\n');
 		}
 	}
