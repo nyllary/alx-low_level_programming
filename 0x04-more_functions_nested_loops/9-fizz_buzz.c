@@ -22,7 +22,7 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
-		else if (f != 100)
+		else if (f != 99)
 		{
 			printf("%d ", f);
 		}
