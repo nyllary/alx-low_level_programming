@@ -1,47 +1,32 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * _strcat - concatenate two strings
+ * _strcat - concatenates two striings
  *
- * @dest: first character strig
- * @src: second character string
+ * @dest: first string
+ * @src: second string
  *
- * Return: Always 0
+ * Return: Always 0(Success)
  */
 char *_strcat(char *dest, char *src)
 {
-	int ab, ba;
+	int str1, str2, i;
 
-	ab = 0;
-	ba = 0;
+	str1 = 0;
+	str2 = 0;
 
-	while (dest[ab] != '\0')
-		ab++;
 
-	while (src[ba] = '\0')
+	while (dest[str1] != '\0')
+		str1++;
+
+	while (src[str2] != '\0')
+		str2++;
+
+	for (i = 0; i < str2; i++)
 	{
-		dest[ba] = src[ba];
-		ab++;
-		ba++;
+		dest[str1 + i] = src[i];
 	}
 
-	dest[ab] = '\0';
-
+	dest[str1 + str2] = '\0';
 
 	return (dest);
-}
-
-int main(void)
-{
-    char s1[98] = "Hello ";
-    char s2[] = "World!\n";
-    char *ptr;
-
-    printf("%s\n", s1);
-    printf("%s", s2);
-    ptr = _strcat(s1, s2);
-    printf("%s", s1);
-    printf("%s", s2);
-    printf("%s", ptr);
-    return (0);
 }
