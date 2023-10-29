@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int i = 0;
-	
+
 	i = atoi(argv[i]);
 
 	for (i = 0; i < argc; i++)
