@@ -16,17 +16,18 @@ struct dog
 };
 
 /**
- * struct dog_t - allias for struct
+ * struct Dog_T - allias for struct
  * @name: element 1
  * @age: element 2
  * @owner: 3rd element
  */
-typedef struct dog_t
+struct Dog_T
 {
 	char *name;
 	float age;
 	char *owner;
 };
+typedef struct Dog_T dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
