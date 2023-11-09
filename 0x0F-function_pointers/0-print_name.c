@@ -9,7 +9,9 @@
  * Return: Nothing
  */
 
-void print_name(char *name, void (*f)(char *))
+typedef void (*PrintFunction)(char *);
+
+void print_name(char *name, PrintFunction f)
 {
 	f(name);
 }
