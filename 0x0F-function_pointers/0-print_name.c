@@ -13,5 +13,7 @@ typedef void (*PrintFunction)(char *);
 
 void print_name(char *name, PrintFunction f)
 {
+	if (name == NULL || f == NULL)
+		return;
 	f(name);
 }

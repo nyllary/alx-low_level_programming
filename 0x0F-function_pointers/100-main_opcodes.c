@@ -33,12 +33,15 @@ int main(int argc, char **argv)
 	/* Get the address of the main function */
 
 	/* Print the opcodes for the specified number of bytes */
-	for (i = 1; i < num_bytes; i++)
+	for (i = 0; i < num_bytes; i++)
 	{
-		printf("%02x", main_ptr[i]);
+		if (i == num_bytes - 1)
+		{
+			printf("%02hhx\n", main_ptr[i]);
+			break;
+		}
+
+		printf("%02hhx ", main_ptr[i]);
 	}
-
-	printf("\n");
-
 	return (0);
 }
