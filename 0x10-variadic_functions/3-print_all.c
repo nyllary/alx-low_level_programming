@@ -2,10 +2,8 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * print all - prints any type passsed to it
- *
+ * print_all - prints any type passsed to it
  * @format: The list of data types passed
- *
  * Return: Always 0(success)
  */
 void print_all(const char * const format, ...)
@@ -44,9 +42,10 @@ void print_all(const char * const format, ...)
 				printf("%s", str_arg);
 		}
 		i++;
-		if (format[i] && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's')
-				printf(", ");
+		if (format[i] && (format[i] == 'c' || format[i] == 'i'
+					|| format[i] == 'f' || format[i] == 's'))
+			printf(", ");
 	}
 	va_end(all);
-	printf ("\n");
+	printf("\n");
 }
