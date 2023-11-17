@@ -1,0 +1,1 @@
+Singly linked list project. The concept behind this projrct is data structure. This this project is to help us learning a different way we can declare aparticular type of variables just as the array does but we can actually do more with linked list.
