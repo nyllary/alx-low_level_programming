@@ -1,0 +1,1 @@
+File handling in C (File I/O). This project is to show us how files can be handled in various ways in c programming. Some oporations that caan be perfomed on such include: read, write, and append. One can set the file to preferred mode at the opening stage with r- read, w- write and a- append. More can be done the accessed file if successful.
