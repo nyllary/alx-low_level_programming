@@ -1,6 +1,20 @@
 #include "main.h"
 #include <fcntl.h>
 #include <unistd.h>
+
+/**
+ * print_error_and_exit - prints a message
+ * @exit_code: exit status
+ * @message: error message
+ * @arg: the arguments
+ * Return: the exit status
+ */
+void print_error_and_exit(int exit_code, const char *message, const char *arg)
+{
+	dprintf(2, "%s %s\n", message, arg);
+	exit(exit_code);
+}
+
 /**
  * main - entry point
  * @argc: argument count
